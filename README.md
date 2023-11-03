@@ -1,21 +1,16 @@
-## Responsive Webpage Template
+# Nerfies
 
-This project webpage template is mobile responsive! Resizing the webpage will automatically
-shift elements around to fit the screen. Try a live version
-[here](https://jasonyzhang.com/webpage-template).
+This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
 
-This webpage template is a fork of
-[this widely used project webpage template](https://github.com/richzhang/webpage-template)
-by [Richard Zhang](https://richzhang.github.io). This template was originally made for
-[this colorful paper](http://richzhang.github.io/colorization/). The responsive version
-was made for [this paper](https://jasonyzhang.com/phosa/).
-
-To use this template, clone the repo:
+If you find Nerfies useful for your work please cite:
 ```
-git clone https://github.com/jasonyzhang/webpage-template
+@article{park2021nerfies
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}
 ```
 
-Copy the contents into a `gh-pages` branch of a GitHub repo. That will automatically 
-make a webpage under address [GITHUB_USERNAME.github.io/REPO_NAME](GITHUB_USERNAME.github.io/REPO_NAME).
-
-Don't forget to update the Google Analytics script!
+# Website License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
