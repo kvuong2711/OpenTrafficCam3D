@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     font-family: "Open Sans", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .container {
@@ -16,11 +16,12 @@ body {
     font-size: 36px;
     margin-top: 20px;
     width: 90%;
+    font-weight: bold;
 }
 
 .author {
     width: 95%;
-    max-width: 300px;
+    max-width: 350px;
     font-size: 24px;
 }
 
@@ -37,8 +38,8 @@ body {
 }
 
 .teaser {
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 900px;
 }
 
 .teaser img {

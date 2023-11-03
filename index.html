@@ -6,7 +6,7 @@
 
 <html lang="en">
 <head>
-	<title>This is my paper title</title>
+	<title>Toward Planet-Wide Traffic Camera Calibration</title>
     <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/
         if you update and want to force Facebook to re-scrape. -->
 	<meta property="og:image" content="Path to my teaser.png"/>
@@ -33,35 +33,30 @@
 <body>
 <div class="container">
     <div class="title">
-        Creative and Descriptive Paper Title
+        Toward Planet-Wide Traffic Camera Calibration
     </div>
 
     <br>
     <br>
 
     <div class="author">
-        <a href="https://en.wikipedia.org/wiki/James_J._Gibson">First Author</a><sup>1</sup>
+        <a href="https://www.khiemvuong.com/">Khiem Vuong</a>
     </div>
     <div class="author">
-        <a href="https://en.wikipedia.org/wiki/James_J._Gibson">Second Author</a><sup>2</sup>
+        <a href="https://www.ri.cmu.edu/ri-people/robert-joseph-tamburo/">Robert Tamburo</a>
     </div>
     <div class="author">
-        <a href="https://en.wikipedia.org/wiki/James_J._Gibson">Third Author</a><sup>3</sup>
-    </div>
-    <div class="author">
-        <a href="https://en.wikipedia.org/wiki/James_J._Gibson">Fourth Author</a><sup>4</sup>
-    </div>
-    <div class="author">
-        <a href="https://en.wikipedia.org/wiki/James_J._Gibson">Fifth Author</a><sup>1</sup>
+        <a href="https://www.cs.cmu.edu/~srinivas/">Srinivasa G. Narasimhan</a>
     </div>
 
     <br>
     <br>
 
-    <div class="affiliation"><sup>1&nbsp;</sup>Affiliation Number One</div>
-    <div class="affiliation"><sup>2&nbsp;</sup>Affiliation Number Two</div>
-    <div class="affiliation"><sup>3&nbsp;</sup>Affiliation Number Three</div>
-    <div class="affiliation"><sup>4&nbsp;</sup>Affiliation Number Four</div>
+    <div class="affiliation">Carnegie Mellon University</div>
+    <br>
+    <br>
+
+    <div class="affiliation">WACV 2024</div>
 
     <br>
     <br>
@@ -73,14 +68,10 @@
     <br>
     <br>
     <div class="teaser">
-        <img src="./resources/teaser.png" alt="Teaser figure."/>
+        <img src="./resources/main_fig.png" alt="Teaser figure."/>
         <br>
         <i>
-            This template was originally made for <a href="http://richzhang.github.io/colorization/">
-            Colorful Image Colorization</a>. It was adapted to be mobile responsive for
-            <a href="https://jasonyzhang.com/phosa/">PHOSA</a>. Try resizing this webpage
-            or opening it on your mobile device. The code can be found in
-            <a href="https://github.com/jasonyzhang/webpage-template"> this repo</a>.
+            Our framework allows us to perform 3D scene reconstruction and precise localization of over 100 real-world traffic cameras distributed globally across multiple countries, with the potential to scale to any camera with sufficient street-level imagery. (Left): Highlighting the reconstruction and localization of traffic cameras at specific chosen locations. (Right): Demonstrating 7 cameras positioned within an urban intersection, accurately localized with respect to the reconstructed 3D scene.
         </i>
     </div>
 
@@ -89,12 +80,12 @@
 
     <h1>Abstract</h1>
     <p>
-        This is my abstract.
+        Despite the widespread deployment of outdoor cameras, their potential for automated analysis remains largely untapped due, in part, to calibration challenges. The absence of precise camera calibration data, including intrinsic and extrinsic parameters, hinders accurate real-world distance measurements from captured videos. To address this, we present a scalable framework that utilizes street-level imagery to reconstruct a metric 3D model, facilitating precise calibration of in-the-wild traffic cameras. Notably, our framework achieves 3D scene reconstruction and accurate localization of over 100 global traffic cameras, and is scalable to any camera with sufficient street-level imagery. For evaluation, we introduce a dataset of 20 fully calibrated traffic cameras, demonstrating our method's significant enhancements over existing automatic calibration techniques. Furthermore, we highlight our approach's utility in traffic analysis by extracting insights via 3D vehicle reconstruction and speed measurement, thereby opening up the potential of using outdoor cameras for automated analysis.
     </p>
 
     <br><br><hr>
 
-    <h1>Paper</h1>
+    <h2>Paper</h2>
 
     <div class="paper-thumbnail">
         <a href="https://arxiv.org">
@@ -102,15 +93,15 @@
         </a>
     </div>
     <div class="paper-info">
-        <h4>Creative and Descriptive Paper Title</h4>
+        <h4>Toward Planet-Wide Traffic Camera Calibration</h4>
         <h5>
-            First Author, Second Author, Third Author, Fourth Author, and Fifth Author
+            Khiem Vuong, Robert Tamburo, Srinivasa G. Narasimhan
         </h5>
-        <pre><code>@InProceedings{author20XXtitle,
-    title = {Creative and Descriptive Paper Title},
-    author = {Author, First and Author, Second and Author, Third and Author, Fourth and Author, Fifth},
-    booktitle = {Conference},
-    year = {20XX},
+        <pre><code>@InProceedings{vuong2024trafficcalib,
+    title = {Toward Planet-Wide Traffic Camera Calibration},
+    author = {Vuong, Khiem and Tamburo, Robert and Narasimhan, Srinivasa G.},
+    booktitle = {WACV},
+    year = {2024},
 }</code></pre>
     </div>
 
@@ -137,12 +128,8 @@
     <br><br><hr>
     <h1>Acknowledgements</h1>
     <p>
-        This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
-        and <a href="http://richzhang.github.io/">Richard Zhang</a> for a
-        <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project. It was
-        adapted to be mobile responsive by <a href="https://jasonyzhang.com/">Jason Zhang</a>
-        for <a href="https://jasonyzhang.com/phosa/">PHOSA</a>. The code can be found
-        <a href="https://github.com/jasonyzhang/webpage-template">here</a>.
+        This work was supported in part by an NSF Grant CNS-2038612, a DOT RITA Mobility-21 Grant 69A3551747111, and an IARPA WRIVA contract.
+        Webpage template borrowed from <a href="https://jasonyzhang.com/phosa/">PHOSA</a>.
     </p>
 
     <br><br>
