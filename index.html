@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Toward Planet-Wide Traffic Camera Calibration">
+  <meta name="keywords" content="OpenTrafficCam3D">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OpenTrafficCam3D</title>
 
@@ -145,18 +145,11 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (coming soon)</span>
+                  <span>Code & Data</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/kvuong2711/OpenTrafficCam3D"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data (coming soon)</span>
-                  </a>
+              
             </div>
 
           </div>
@@ -170,7 +163,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./resources/main_fig.png" alt="Teaser figure."/>
+      <img src="./static/images/main_fig.png" alt="Teaser figure."/>
       <h2 class="subtitle has-text-centered">
         Our framework allows us to perform 3D scene reconstruction and precise localization of over 100 real-world traffic cameras distributed globally across multiple countries, with the potential to scale to any camera with sufficient street-level imagery. (Left): Highlighting the reconstruction and localization of traffic cameras at specific chosen locations. (Right): Demonstrating 7 cameras positioned within an urban intersection, accurately localized with respect to the reconstructed 3D scene.
       </h2>
@@ -255,16 +248,78 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="columns is-centered has-text-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+
+          <img src="./static/images/Traffic28_live.jpg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+          <p>
+            Image from traffic camera
+          </p>
         </div>
       </div>
-    </div> -->
+      <!--/ Visual Effects. -->
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/traffic28.mp4"
+                    type="video/mp4">
+          </video>
+          <p>
+            3D reconstruction (traffic camera in <font color="red"> red</font>)
+          </p>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+
+
+    </div>
     <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Technical Method</h2>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+      <img src="./static/images/full_pipeline-compressed.png" alt="Teaser figure."/>
+      <h2 class="subtitle has-text-centered">
+        Using street-level panoramas and GPS data from GSV, we reconstruct the scene in 3D for a metric-scale representation. With a query image from a traffic camera, we perform camera localization to determine intrinsic parameters and camera pose w.r.t. the 3D scene.
+      </h2>
+
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative Results</h2>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+      <img src="./static/images/more_qualitative-compressed.png" alt="Teaser figure."/>
+      <h2 class="subtitle has-text-centered">
+        Additional examples demonstrate our method's robustness in reconstructing scenes and localizing cameras spanning various countries and continents (traffic camera visualized in <font color="red"> red</font>).
+      </h2>
+
   </div>
 </section>
 
@@ -281,7 +336,17 @@
   </div>
 </section>
 
-<section class="section" id="Acknowledgements">
+<section class="section" id="social">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Potential Societal Impact and Data Licensing</h2>
+    <p>
+    We do not perform any human subject studies from these cameras. To preserve the privacy of the object captured in the images, we blur the faces and license plates in all the images to be released. This study is designated as non-human subjects research by our Institutional Review Board (IRB).
+    </p>
+    <p>
+      When using data from Google Street View, it's crucial to follow the <a href="https://www.google.com/permissions/geoguidelines/attr-guide/">Google Street View Attribution Guidelines</a>.
+  </p>
+  </div>
+
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgements</h2>
     This work was supported in part by an NSF Grant CNS-2038612, a DOT RITA Mobility-21 Grant 69A3551747111, and Intelligence Advanced Research Projects Activity (IARPA) via Department of Interior/ Interior Business Center (DOI/IBC) contract number 140D0423C0074. The U.S. Government is authorized to reproduce and distribute reprints for Governmental purposes notwithstanding any copyright annotation thereon. Disclaimer: The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies or endorsements, either expressed or implied, of IARPA, DOI/IBC, or the U.S. Government.
